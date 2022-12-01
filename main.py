@@ -157,7 +157,7 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
                 "color": get_color()
             },
             "words": {
-                "value": words(),
+                "value": words,
                 "color": get_color()
   }
         }
