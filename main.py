@@ -1,5 +1,5 @@
 import random
-from time import time, localtime
+import time
 import cityinfo
 from requests import get, post
 import requests
