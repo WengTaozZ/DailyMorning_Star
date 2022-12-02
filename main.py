@@ -43,7 +43,7 @@ def get_weather(province, city):
         sys.exit(1)
     # city_id = 101280101
     # 毫秒级时间戳
-    t = (int(round(time() * 1000)))
+    t = (int(round(time.time() * 1000)))
     headers = {
         "Referer": "http://www.weather.com.cn/weather1d/{}.shtml".format(city_id),
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
