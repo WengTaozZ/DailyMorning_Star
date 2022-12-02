@@ -8,8 +8,7 @@ from zhdate import ZhDate
 import sys
 import os
 
-nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
-today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d").now().date() #今天的日期
+today = (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S')
 
 def get_color():
     # 获取随机颜色
