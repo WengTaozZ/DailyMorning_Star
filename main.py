@@ -3,8 +3,7 @@ import time
 import cityinfo
 from requests import get, post
 import requests
-from datetime import datetime, date, timedelta
-import datetime
+from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
