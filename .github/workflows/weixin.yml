@@ -11,13 +11,14 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v3
-      with:
-        ref: master
-
-    - name: sender
+    - uses: actions/checkout@v2
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
         architecture: 'x64'
-    - run: pip install -r ./requirements.txt && python ./main.py
+      run: |
+          python -m pip install --upgrade pip
+          pip3 install -r requirements.txt
+    - name: morning
+      run: |
+          python3 main.py
